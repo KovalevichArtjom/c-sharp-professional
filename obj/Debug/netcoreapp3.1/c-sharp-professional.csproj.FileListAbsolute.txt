@@ -1,0 +1,4 @@
+F:\study\C#\c-sharp-professional\obj\Debug\netcoreapp3.1\c-sharp-professional.csprojAssemblyReference.cache
+F:\study\C#\c-sharp-professional\obj\Debug\netcoreapp3.1\c-sharp-professional.AssemblyInfoInputs.cache
+F:\study\C#\c-sharp-professional\obj\Debug\netcoreapp3.1\c-sharp-professional.AssemblyInfo.cs
+F:\study\C#\c-sharp-professional\obj\Debug\netcoreapp3.1\c-sharp-professional.csproj.CoreCompileInputs.cache

@@ -1,0 +1,13 @@
+F:\study\C#\c-sharp-professional\004\Task_3\bin\Debug\netcoreapp3.1\Task_3.exe
+F:\study\C#\c-sharp-professional\004\Task_3\bin\Debug\netcoreapp3.1\Task_3.deps.json
+F:\study\C#\c-sharp-professional\004\Task_3\bin\Debug\netcoreapp3.1\Task_3.runtimeconfig.json
+F:\study\C#\c-sharp-professional\004\Task_3\bin\Debug\netcoreapp3.1\Task_3.runtimeconfig.dev.json
+F:\study\C#\c-sharp-professional\004\Task_3\bin\Debug\netcoreapp3.1\Task_3.dll
+F:\study\C#\c-sharp-professional\004\Task_3\bin\Debug\netcoreapp3.1\Task_3.pdb
+F:\study\C#\c-sharp-professional\004\Task_3\obj\Debug\netcoreapp3.1\Task_3.csprojAssemblyReference.cache
+F:\study\C#\c-sharp-professional\004\Task_3\obj\Debug\netcoreapp3.1\Task_3.AssemblyInfoInputs.cache
+F:\study\C#\c-sharp-professional\004\Task_3\obj\Debug\netcoreapp3.1\Task_3.AssemblyInfo.cs
+F:\study\C#\c-sharp-professional\004\Task_3\obj\Debug\netcoreapp3.1\Task_3.csproj.CoreCompileInputs.cache
+F:\study\C#\c-sharp-professional\004\Task_3\obj\Debug\netcoreapp3.1\Task_3.dll
+F:\study\C#\c-sharp-professional\004\Task_3\obj\Debug\netcoreapp3.1\Task_3.pdb
+F:\study\C#\c-sharp-professional\004\Task_3\obj\Debug\netcoreapp3.1\Task_3.genruntimeconfig.cache
