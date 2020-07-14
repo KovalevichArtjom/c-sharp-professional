@@ -6,6 +6,7 @@ namespace Task_3
     {
         static void Main(string[] args)
         {
+            (new Application()).run();
             Console.ReadKey();
         }
     }

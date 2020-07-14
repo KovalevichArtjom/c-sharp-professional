@@ -9,9 +9,9 @@ namespace Task_3.views
     abstract class AApplication
     {
         const string REPLACEMENT_WORD = "ГАВ!";
-
-        private Regex reg;
+        private readonly RegexOptions options;
         private readonly List<string> prepositions;
+        private readonly string template;
 
         public AApplication()
         {
@@ -21,23 +21,40 @@ namespace Task_3.views
                 "с", "о", "над", "около", "при",
                 "перед"
             };
-        }
+            this.options = RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace;
+            this.template = @"\b({0})\b";
+    }
 
         abstract public void run();
-        private void repPrepositions(StringReader stringReader)
+        protected string repPrepositions(StringReader stringReader)
         {
-            var content = stringReader.ReadToEnd();
-            var pattern = new StringBuilder();
+            string  content = stringReader.ReadToEnd();
+            dynamic pattern = new StringBuilder();
             
-            pattern.Append('(');
             foreach (string preposition in this.prepositions)
             {
                 if (prepositions.IndexOf(preposition) != 0) pattern.Append('|');
+
                 pattern.Append(preposition);
             }
-            pattern.Append(')');
+            pattern = String.Format(
+                this.template,
+                pattern.ToString()
+            );
 
-            Console.WriteLine("{0}", pattern.ToString());
+            foreach (var match in Regex.Matches(content, pattern, this.options))
+            {
+                content = Regex.Replace(
+                    content,
+                    String.Format(
+                        this.template,
+                        match.ToString()
+                        ),
+                    REPLACEMENT_WORD
+                    );
+            }
+
+            return content.ToString();
         }
     }
 }
