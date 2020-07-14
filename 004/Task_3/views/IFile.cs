@@ -31,25 +31,16 @@ namespace Task_3.views
             set => this.path = value;
         }
 
-        private string pathApp
+        private string pathFile
         {
             get
             {
-                return this.pathApp;
+                return this.pathFile;
             }
-            set => this.pathApp = value;
+            set => this.pathFile = value;
         }
         
-        private StreamWriter streamWriter 
-        {
-            get
-            {
-                return this.streamWriter;
-            }
-            set => this.streamWriter = value as StreamWriter;
-        }
-        
-        private StreamReader streamReader
+        private StreamReader streamReader 
         {
             get
             {
@@ -59,6 +50,6 @@ namespace Task_3.views
         }
 
         public void write(string content);
-        public StreamReader read();
+        public string read();
     }
 }

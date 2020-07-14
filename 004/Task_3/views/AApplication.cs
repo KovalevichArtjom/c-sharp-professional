@@ -26,34 +26,36 @@ namespace Task_3.views
     }
 
         abstract public void run();
-        protected string repPrepositions(StringReader stringReader)
+        protected string repPrepositions(string content)
         {
-            string  content = stringReader.ReadToEnd();
-            dynamic pattern = new StringBuilder();
+            if (!String.IsNullOrEmpty(content))
+            {
+                dynamic pattern = new StringBuilder();
+
+                foreach (string preposition in this.prepositions)
+                {
+                    if (prepositions.IndexOf(preposition) != 0) pattern.Append('|');
+
+                    pattern.Append(preposition);
+                }
+                pattern = String.Format(
+                    this.template,
+                    pattern.ToString()
+                );
+
+                foreach (var match in Regex.Matches(content, pattern, this.options))
+                {
+                    content = Regex.Replace(
+                        content,
+                        String.Format(
+                            this.template,
+                            match.ToString()
+                            ),
+                        REPLACEMENT_WORD
+                        );
+                }
+            }
             
-            foreach (string preposition in this.prepositions)
-            {
-                if (prepositions.IndexOf(preposition) != 0) pattern.Append('|');
-
-                pattern.Append(preposition);
-            }
-            pattern = String.Format(
-                this.template,
-                pattern.ToString()
-            );
-
-            foreach (var match in Regex.Matches(content, pattern, this.options))
-            {
-                content = Regex.Replace(
-                    content,
-                    String.Format(
-                        this.template,
-                        match.ToString()
-                        ),
-                    REPLACEMENT_WORD
-                    );
-            }
-
             return content.ToString();
         }
     }
