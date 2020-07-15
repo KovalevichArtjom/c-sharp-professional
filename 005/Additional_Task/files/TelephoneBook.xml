@@ -1,0 +1,5 @@
+<?xml version='1.0'?>
+<MyContacts>
+    <Contact name='contact' />
+    <Contact TelephoneNumber='+375(33)688-94-09' />
+</MyContacts>
