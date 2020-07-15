@@ -38,11 +38,11 @@ namespace Additional_Task
             xmlWriter.WriteStartDocument();
             xmlWriter.WriteStartElement("MyContacts");
                 xmlWriter.WriteStartElement("Contact");
-                    xmlWriter.WriteStartAttribute("name");
+                    xmlWriter.WriteStartAttribute("value");
                     xmlWriter.WriteString("contact");
                 xmlWriter.WriteEndElement();
-                xmlWriter.WriteStartElement("Contact");
-                    xmlWriter.WriteStartAttribute("TelephoneNumber");
+                xmlWriter.WriteStartElement("TelephoneNumber");
+                    xmlWriter.WriteStartAttribute("value");
                     xmlWriter.WriteString("+375(33)688-94-09");
                 xmlWriter.WriteEndElement();
             xmlWriter.WriteEndElement();
